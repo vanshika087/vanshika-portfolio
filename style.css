@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    gap: 23px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(57, 57, 117);
+    font-size: 18px;
+}
+
+.left {
+    font-size: 25px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 40px 60px;
+}
+
+.firstSection>div {
+    width: 40%;
+}
+
+.leftSection {
+    font-size: 40px;
+}
+
+.purple {
+    color: rgb(92, 92, 155);
+}
+
+.text-grey {
+    color: grey;
+}
+
+#element {
+    color: rgb(92, 92, 155);
+}
+
+section {
+    padding: 60px 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.skillsSection {
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skillsSection h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: white;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    color: white;
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 13, 255, 0.4);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 140px;
+    cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0, 13, 255, 0.7);
+}
+
+.skillsSection .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-grid div {
+    background-color: rgb(30, 30, 80);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.aboutSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+    background-color: rgb(0, 0, 33);
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 45%;
+    background-color: rgb(18, 18, 62);
+    padding: 40px;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+.about-animation {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+lottie-player {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+.projectsSection .project-card {
+    background-color: rgb(30, 30, 80);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: rgb(18, 18, 62);
+    text-align: center;
+    padding: 20px;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstSection>div {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
